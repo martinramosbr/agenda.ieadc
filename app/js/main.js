@@ -61,41 +61,427 @@ function getWeeksInMonth(a, b) {
     return c;
 }
 
-week_date = getWeeksInMonth(today.getMonth(), today.getFullYear())[2];
 
 $(document).ready(function () {
     $("#evoCalendar").evoCalendar({
         format: "dd MM, yyyy",
         titleFormat: "MM",
-        language:"pt",
-        
-        calendarEvents: [{
-            id: "d8jai7s",
-            name: "Culto de Evangelismo",
-            description: "Dirigente: Pr. Nilson Depetris e cop. Martinho Ramos. Das 19:00 às 21:30",
-            date: "February/15/1999",
-            type: "birthday",
-            everyYear: !0
-        }, {
-            id: "sKn89hi",
-            name: "Clinica da alma",
-            description: "Trabalho de evangelismo: Das 10H às 12H",
-            date: [today.getMonth() + 1 + "/" + week_date.start + "/" + today.getFullYear(), today.getMonth() + 1 + "/" + week_date.end + "/" + today.getFullYear()],
-            type: "event",
-            everyYear: !0
-        }, {
-            id: "in8bha4",
-            name: "Culto de Natal",
-            description: "Das 19:00 às 21:30",
-            date: today,
-            type: "holiday"
-        }, {
-            id: "in8bha4",
-            name: "Costela abençoada",
-            description: "Das 11:30 às 13:30",
-            date: today,
-            type: "event"
-        }]
+        language: "pt",
+
+        calendarEvents: [
+            {
+                id: "a1",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "January/13/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a2",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "February/10/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a3",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "March/09/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a4",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "April/13/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a5",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "May/11/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a6",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "June/08/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a7",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "July/13/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a8",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "August/10/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a9",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "September/14/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a10",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "October/12/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a11",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 19H",
+                date: "November/09/2024",
+                type: "event",
+                everyYear: !0
+            },
+            {
+                id: "a12",
+                name: "Culto de Ceia",
+                description: "Pr. Nilson Depetris, 22H",
+                date: "December/31/2024",
+                type: "event",
+                everyYear: !0
+            },
+
+            {
+                id: "b1",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "January/21/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            // {
+            //     id: "b2",
+            //     name: "Culto de Evangelismo",
+            //     description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+            //     date: "February/10/2024",
+            //     type: "birthday",
+            //     everyYear: !0
+            // },
+            {
+                id: "b3",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "March/24/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            {
+                id: "b4",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "April/21/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            // {
+            //     id: "b5",
+            //     name: "Culto de Evangelismo",
+            //     description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+            //     date: "May/11/2024",
+            //     type: "birthday",
+            //     everyYear: !0
+            // },
+            {
+                id: "b6",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "June/09/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            {
+                id: "b7",
+                name: "Confraternização",
+                description: "Evangelismo | Cop. Martinho, 19:00H",
+                date: "July/27/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            {
+                id: "b72",
+                name: "Confraternização ",
+                description: "Evangelismo | Cop. Martinho, 18:30H",
+                date: "July/28/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            {
+                id: "b8",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "August/18/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            {
+                id: "b9",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "September/15/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            // {
+            //     id: "b10",
+            //     name: "Culto de Evangelismo",
+            //     description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+            //     date: "October/01/2024",
+            //     type: "birthday",
+            //     everyYear: !0
+            // },
+            {
+                id: "b11",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "November/17/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+            {
+                id: "b12",
+                name: "Culto de Evangelismo",
+                description: "Pr. Nilson Depetris | Cop. Martinho, 18:30H",
+                date: "December/15/2024",
+                type: "birthday",
+                everyYear: !0
+            },
+
+            {
+                id: "c1",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "January/07/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            // {
+            //     id: "c2",
+            //     name: "Culto da Familia",
+            //     description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+            //     date: "February/10/2024",
+            //     type: "holiday",
+            //     everyYear: !0
+            // },
+            // {
+            //     id: "c3",
+            //     name: "Culto da Familia",
+            //     description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+            //     date: "March/24/2024",
+            //     type: "holiday",
+            //     everyYear: !0
+            // },
+            {
+                id: "c4",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "April/07/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c5",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "May/05/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c6",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "June/02/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c7",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 19:00H",
+                date: "July/07/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c72",
+                name: "Confraternização",
+                description: "DECADC | Pd. Reginaldo, 19H",
+                date: "August/03/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c8",
+                name: "Confraternização",
+                description: "DECADC | Pd. Reginaldo, 18:30H",
+                date: "August/04/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c9",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "September/01/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c10",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "October/06/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c11",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "November/03/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "c12",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "December/01/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d1",
+                name: "Culto de Missões",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "January/07/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            // {
+            //     id: "d2",
+            //     name: "Culto da Familia",
+            //     description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+            //     date: "February/10/2024",
+            //     type: "holiday",
+            //     everyYear: !0
+            // },
+            // {
+            //     id: "d3",
+            //     name: "Culto da Familia",
+            //     description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+            //     date: "March/24/2024",
+            //     type: "holiday",
+            //     everyYear: !0
+            // },
+            {
+                id: "d4",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "April/07/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d5",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "May/05/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d6",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "June/02/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d7",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 19:00H",
+                date: "July/07/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d72",
+                name: "Confraternização",
+                description: "DECADC | Pd. Reginaldo, 19H",
+                date: "August/03/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d8",
+                name: "Confraternização",
+                description: "DECADC | Pd. Reginaldo, 18:30H",
+                date: "August/04/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d9",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "September/01/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d10",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "October/06/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d11",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "November/03/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+            {
+                id: "d12",
+                name: "Culto da Familia",
+                description: "Pr. Nilson Depetris | Pd. Reginaldo, 18:30H",
+                date: "December/01/2024",
+                type: "holiday",
+                everyYear: !0
+            },
+
+
+        ]
     });
 
 

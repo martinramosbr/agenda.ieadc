@@ -49,45 +49,6 @@
                 default_class: $(element)[0].classList.value,
                 validParts: /dd?|DD?|mm?|MM?|yy(?:yy)?/g,
                 dates: {
-                    // en: {
-                    //     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                    //     daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-                    //     daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-                    //     months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-                    //     monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                    //     noEventForToday: "No event for today.. so take a rest! :)",
-                    //     noEventForThisDay: "No event for this day.. so take a rest! :)",
-                    //     previousYearText: "Previous year",
-                    //     nextYearText: "Next year",
-                    //     closeSidebarText: "Close sidebar",
-                    //     closeEventListText: "Close event list"
-                    // },
-                    // es: {
-                    //     days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
-                    //     daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
-                    //     daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
-                    //     months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-                    //     monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-                    //     noEventForToday: "No hay evento para hoy.. ¡así que descanse! :)",
-                    //     noEventForThisDay: "Ningún evento para este día.. ¡así que descanse! :)",
-                    //     previousYearText: "Año anterior",
-                    //     nextYearText: "El próximo año",
-                    //     closeSidebarText: "Cerrar la barra lateral",
-                    //     closeEventListText: "Cerrar la lista de eventos"
-                    // },
-                    // de: {
-                    //     days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
-                    //     daysShort: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
-                    //     daysMin: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
-                    //     months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-                    //     monthsShort: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
-                    //     noEventForToday: "Keine Veranstaltung für heute.. also ruhen Sie sich aus! :)",
-                    //     noEventForThisDay: "Keine Veranstaltung für diesen Tag.. also ruhen Sie sich aus! :)",
-                    //     previousYearText: "Vorheriges Jahr",
-                    //     nextYearText: "Nächstes Jahr",
-                    //     closeSidebarText: "Schließen Sie die Seitenleiste",
-                    //     closeEventListText: "Schließen Sie die Ereignisliste"
-                    // },
                     pt: {
                         days: ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"],
                         daysShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
@@ -101,32 +62,6 @@
                         closeSidebarText: "Feche a barra lateral",
                         closeEventListText: "Feche a lista de eventos"
                     },
-                    fr: {
-                        days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
-                        daysShort: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
-                        daysMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
-                        months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-                        monthsShort: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"],
-                        noEventForToday: "Rien pour aujourd'hui... Belle journée :)",
-                        noEventForThisDay: "Rien pour ce jour-ci... Profite de te réposer :)",
-                        previousYearText: "Année précédente",
-                        nextYearText: "L'année prochaine",
-                        closeSidebarText: "Fermez la barre latérale",
-                        closeEventListText: "Fermer la liste des événements"
-                    },
-                    nl: {
-                        days: ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"],
-                        daysShort: ["Zon", "Maan", "Din", "Woe", "Don", "Vrij", "Zat"],
-                        daysMin: ["Zo", "Ma", "Di", "Wo", "Do", "Vr", "Za"],
-                        months: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
-                        monthsShort: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
-                        noEventForToday: "Geen event voor vandaag.. dus rust even uit! :)",
-                        noEventForThisDay: "Geen event voor deze dag.. dus rust even uit! :)",
-                        previousYearText: "Vorig jaar",
-                        nextYearText: "Volgend jaar",
-                        closeSidebarText: "Sluit de zijbalk",
-                        closeEventListText: "Sluit de event lijst"
-                    }
                 }
             }
             _.initials.weekends = {
@@ -404,7 +339,7 @@
 
         if (_.windowW <= _.$breakpoints.tablet) { // tablet
             _.toggleSidebar(false);
-            _.toggleEventList(false);
+            _.toggleEventList(true);
 
             if (_.windowW <= _.$breakpoints.mobile) { // mobile
                 $(window)
@@ -417,7 +352,7 @@
             if (!_.options.sidebarDisplayDefault) _.toggleSidebar(false);
             else _.toggleSidebar(true);
 
-            if (!_.options.eventDisplayDefault) _.toggleEventList(false);
+            if (!_.options.eventDisplayDefault) _.toggleEventList(true);
             else _.toggleEventList(true);
             
             $(window)
